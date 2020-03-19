@@ -4,20 +4,22 @@ import javax.annotation.Generated;
 import javax.persistence.*;
 
 @Entity
-@Table(name="customer_requests")
+@Table(name="customer")
 public class CustomerService {
     @Id
     @GeneratedValue
     Long requestNumber;
-    @Column
+    //name maps this specific column to this field.
+    @Column(name = "name")
     String customerName;
-    @Column
+    //this field is related to the address column in the DB.
+    @Column(name = "address")
     String customerAddress;
-    @Column
+    @Column(name = "technician")
     String technician;
-    @Column
+    @Column(name = "phone")
     int phoneNumber;
-    @Column
+    @Column(name = "description")
     String description;
 
     public CustomerService(){
