@@ -12,9 +12,9 @@ CREATE TABLE customer_requests(
     PRIMARY KEY (requestNumber)
 );
 
-INSERT INTO customer_requests(requestDateTime, customerName, customerAddress, phoneNumber, description, technician, appointmentDate, requestStatus)
+INSERT INTO customer_service(requestDateTime, customerName, customerAddress, phoneNumber, description, technician, appointmentDate, requestStatus)
 VALUES('03/16/2020 6:07PM', 'Some Customer1', '123 Any Street, SomeCity, ST, 999991', '111-222-33331', 'its broke and I need it fixed!1', 'tech1', 'appointment1', 'ASSIGNED');
-INSERT INTO customer_requests(requestDateTime, customerName, customerAddress, phoneNumber, description, technician, appointmentDate, requestStatus)
+INSERT INTO customer_service(requestDateTime, customerName, customerAddress, phoneNumber, description, technician, appointmentDate, requestStatus)
 VALUES('03/16/2020 6:08PM', 'Some Customer2', '123 Any Street, SomeCity, ST, 999992', '111-222-33332', 'its broke and I need it fixed!2', 'tech2', 'appointment2', 'RESOLVED');
 INSERT INTO customer_requests(requestDateTime, customerName, customerAddress, phoneNumber, description, technician, appointmentDate, requestStatus)
 VALUES('03/16/2020 6:09PM', 'Some Customer3', '123 Any Street, SomeCity, ST, 999991', '111-222-33331', 'its broke and I need it fixed!3', 'tech3', 'appointment3', 'ASSIGNED');

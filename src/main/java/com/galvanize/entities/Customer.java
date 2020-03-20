@@ -5,7 +5,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="customer")
-public class CustomerService {
+public class Customer {
     @Id
     @GeneratedValue
     Long requestNumber;
@@ -22,11 +22,11 @@ public class CustomerService {
     @Column(name = "description")
     String description;
 
-    public CustomerService(){
+    public Customer(){
 
     }
 
-    public CustomerService(String customerName, String customerAddress, String description){
+    public Customer(String customerName, String customerAddress, String description){
         this.customerName = customerName;
         this.customerAddress = customerAddress;
         this.phoneNumber = phoneNumber;
@@ -34,7 +34,7 @@ public class CustomerService {
 
     }
 
-    public CustomerService(Long requestNumber, String customerName, String customerAddress, int phoneNumber, String description){
+    public Customer(Long requestNumber, String customerName, String customerAddress, int phoneNumber, String description){
         this.requestNumber = requestNumber;
         this.customerName = customerName;
         this.customerAddress = customerAddress;
